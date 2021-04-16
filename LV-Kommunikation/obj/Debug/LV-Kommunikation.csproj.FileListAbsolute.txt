@@ -1,0 +1,12 @@
+D:\Projekte\Auftraege\Kelvion API\LV-Kommunikation\bin\Debug\LV-Kommunikation.exe
+D:\Projekte\Auftraege\Kelvion API\LV-Kommunikation\bin\Debug\LV-Kommunikation.pdb
+D:\Projekte\Auftraege\Kelvion API\LV-Kommunikation\obj\Debug\LV-Kommunikation.csprojAssemblyReference.cache
+D:\Projekte\Auftraege\Kelvion API\LV-Kommunikation\obj\Debug\Interop.LVManage8.dll
+D:\Projekte\Auftraege\Kelvion API\LV-Kommunikation\obj\Debug\Interop.VBA.dll
+D:\Projekte\Auftraege\Kelvion API\LV-Kommunikation\obj\Debug\LV-Kommunikation.csproj.ResolveComReference.cache
+D:\Projekte\Auftraege\Kelvion API\LV-Kommunikation\obj\Debug\LV_Kommunikation.Form1.resources
+D:\Projekte\Auftraege\Kelvion API\LV-Kommunikation\obj\Debug\LV_Kommunikation.Properties.Resources.resources
+D:\Projekte\Auftraege\Kelvion API\LV-Kommunikation\obj\Debug\LV-Kommunikation.csproj.GenerateResource.cache
+D:\Projekte\Auftraege\Kelvion API\LV-Kommunikation\obj\Debug\LV-Kommunikation.csproj.CoreCompileInputs.cache
+D:\Projekte\Auftraege\Kelvion API\LV-Kommunikation\obj\Debug\LV-Kommunikation.exe
+D:\Projekte\Auftraege\Kelvion API\LV-Kommunikation\obj\Debug\LV-Kommunikation.pdb
