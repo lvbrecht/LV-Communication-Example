@@ -39,6 +39,7 @@ namespace LV_Kommunikation {
             this.label4 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.Shutdown = new System.Windows.Forms.Button();
+            this.hiddenB1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // start
@@ -53,7 +54,7 @@ namespace LV_Kommunikation {
             // 
             // HideShow
             // 
-            this.HideShow.Location = new System.Drawing.Point(234, 12);
+            this.HideShow.Location = new System.Drawing.Point(339, 12);
             this.HideShow.Name = "HideShow";
             this.HideShow.Size = new System.Drawing.Size(75, 23);
             this.HideShow.TabIndex = 1;
@@ -67,7 +68,7 @@ namespace LV_Kommunikation {
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(296, 152);
+            this.textBox1.Size = new System.Drawing.Size(401, 152);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
@@ -121,7 +122,7 @@ namespace LV_Kommunikation {
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(84, 20);
             this.textBox6.TabIndex = 12;
-            this.textBox6.Text = "B1";
+            this.textBox6.Text = "Projekt";
             // 
             // label5
             // 
@@ -175,17 +176,28 @@ namespace LV_Kommunikation {
             this.Shutdown.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Shutdown.Location = new System.Drawing.Point(13, 203);
             this.Shutdown.Name = "Shutdown";
-            this.Shutdown.Size = new System.Drawing.Size(296, 23);
+            this.Shutdown.Size = new System.Drawing.Size(401, 23);
             this.Shutdown.TabIndex = 16;
             this.Shutdown.Text = "Shutdown Server";
             this.Shutdown.UseVisualStyleBackColor = true;
             this.Shutdown.Click += new System.EventHandler(this.Shutdown_Click);
             // 
+            // hiddenB1
+            // 
+            this.hiddenB1.Location = new System.Drawing.Point(192, 12);
+            this.hiddenB1.Name = "hiddenB1";
+            this.hiddenB1.Size = new System.Drawing.Size(96, 23);
+            this.hiddenB1.TabIndex = 17;
+            this.hiddenB1.Text = "Start B1 hidden";
+            this.hiddenB1.UseVisualStyleBackColor = true;
+            this.hiddenB1.Click += new System.EventHandler(this.hiddenB1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(321, 400);
+            this.ClientSize = new System.Drawing.Size(426, 400);
+            this.Controls.Add(this.hiddenB1);
             this.Controls.Add(this.Shutdown);
             this.Controls.Add(this.GetValue);
             this.Controls.Add(this.StartModul);
@@ -226,6 +238,7 @@ namespace LV_Kommunikation {
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button Shutdown;
+        private System.Windows.Forms.Button hiddenB1;
     }
 }
 

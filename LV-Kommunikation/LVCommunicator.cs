@@ -20,7 +20,7 @@ namespace LV_Kommunikation {
             StartAtlas(exe);
         }
 
-        public void StartAtlas(string exe) {
+        public bool StartAtlas(string exe) {
             if(lvSupport == null) {
                 this.exe = exe;
                 lvSupport = new LVManage8.cLVSupport();
@@ -29,12 +29,20 @@ namespace LV_Kommunikation {
                     if (atlas == null) {
                         atlas = lvSupport.Create(exe);
                     }
-                    short nummer = atlas.CreateModul("");
-                    atlas.activateModulNr(nummer);
-                    atlas.Show(true);
+                    
+                    
+                    //short nummer = atlas.CreateModul("");
+                    //atlas.activateModulNr(nummer);
+                    //atlas.Show(true);
                 }
             }
-            
+            if (atlas != null) {
+                return true;
+            }
+            else {
+                return false;
+            }
+
         }
         ~LVCommunicator()
         {
@@ -105,7 +113,7 @@ namespace LV_Kommunikation {
         }
 
         public void Show() {
-            atlas.Show(true);
+            atlas.Show();
         }
 
         public int GetBek(int kap, int var) {
@@ -114,6 +122,26 @@ namespace LV_Kommunikation {
             short VariableNummer = Convert.ToInt16(var);
 
             return (int) atlas.Atlasbek[Chapter, VariableNummer, 1];
+        }
+
+        public void StartB1WithPresettings() {
+            //AD ist das Projekt-Modul in dem Norm, Werkstoffdefinition und Lastfall Betrachtung oder nicht vorgegeben wird (wichtig für alle folgenden Festigkeitsmodule)
+            string module = "AD"; 
+            short kap = atlas.CreateModul(module);
+            //es gibt 10 CalcTypes (für jedes Modul, wovon jedoch nicht immer alle verwendet werden), diese verursachen die Vorauswahl-Form beim start eines Moduls
+            //für AD sind dies die auswahlen die zu treffen sind:
+            atlas.CalcType[2, kap] = 2; // Typ 2 = ohne Lastfälle, Typ 3 = mit Lastfälle
+            atlas.CalcType[3, kap] = 1; //Norm AD2000 in Projekt-Modul(AD) --> 2: EN 13445 ... --> kann später über die Combobox mit Variablennummer 269 noch geändert werden
+            atlas.CalcType[4, kap] = 1; //Werkstoffdefinition nach  AD2000 in Projekt-Modul(AD) --> 2: EN 13445 , 3 ...  --> selbe wie oben hier mit 270
+            atlas.activateModulNr(kap);
+
+            //jetzt kann B1 und jedes weitere Festigkeitsmodul gestartet werden
+            module = "B1";
+            kap = atlas.CreateModul(module);
+            atlas.CalcType[1, kap] = 1; //1: Zylinderschalen; 2: Kugelschalen
+            atlas.activateModulNr(kap);
+            //jetzt sind die notwendigen Eingaben erledigt. Drücken Sie auf den Hide/Show-Button um sich das ergebnis anzusehen
+
         }
 
     }

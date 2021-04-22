@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\LV-Kommunikation"
   ],
+  "SelectedNode": "\\LV-Kommunikation\\LVCommunicator.cs",
   "PreviewInSolutionExplorer": false
 }

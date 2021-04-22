@@ -35,7 +35,14 @@ namespace LV_Kommunikation {
         }
 
         private void start_Click(object sender, EventArgs e) {
-            lvComm.StartAtlas(exeToStart);
+            textBox1.Text = "Starting Atlas ...";
+            bool started = lvComm.StartAtlas(exeToStart);
+            if (started) {
+                textBox1.Text = "Atlas started";
+            }
+            else {
+                textBox1.Text = "Atlas failed to start";
+            }
         }
 
         private void HideShow_Click(object sender, EventArgs e) {
@@ -77,6 +84,7 @@ namespace LV_Kommunikation {
             string text = textBox6.Text;
             if(text != String.Empty) {
                 lvComm.StartModule(text);
+
             }
             
         }
@@ -102,6 +110,11 @@ namespace LV_Kommunikation {
 
         private void Shutdown_Click(object sender, EventArgs e) {
             lvComm.Shutdown();
+        }
+
+        private void hiddenB1_Click(object sender, EventArgs e) {
+            lvComm.StartB1WithPresettings();
+            hidden = true;
         }
     }
 }
