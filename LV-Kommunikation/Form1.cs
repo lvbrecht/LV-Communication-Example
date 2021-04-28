@@ -116,5 +116,11 @@ namespace LV_Kommunikation {
             lvComm.StartB1WithPresettings();
             hidden = true;
         }
+
+        private void deleteChapterBt_Click(object sender, EventArgs e) {
+            string chapToDelete = textBox2.Text;
+            if (chapToDelete == String.Empty) MessageBox.Show("No valid chapter number given.");
+            else lvComm.DeleteChapter(Convert.ToInt32(textBox2.Text));
+        }
     }
 }

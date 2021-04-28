@@ -46,7 +46,7 @@ namespace LV_Kommunikation {
         }
         ~LVCommunicator()
         {
-            atlas.Quit();
+            if(atlas != null) atlas.Quit();
         }
 
         public void Shutdown() {
@@ -141,7 +141,16 @@ namespace LV_Kommunikation {
             atlas.CalcType[1, kap] = 1; //1: Zylinderschalen; 2: Kugelschalen
             atlas.activateModulNr(kap);
             //jetzt sind die notwendigen Eingaben erledigt. Drücken Sie auf den Hide/Show-Button um sich das ergebnis anzusehen
+            
+        }
 
+        public void DeleteChapter(int chapterIndex){
+            string ModulName;
+            if (chapterIndex == null) return;
+            ModulName = "KILL|";
+            ModulName += chapterIndex.ToString();
+            atlas.CreateModul(ref ModulName);
+            atlas.ModulRefresh(true);
         }
 
     }

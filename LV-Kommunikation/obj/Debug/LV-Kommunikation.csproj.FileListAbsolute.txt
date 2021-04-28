@@ -10,3 +10,15 @@ D:\Projekte\Auftraege\Kelvion API\LV-Kommunikation\obj\Debug\LV-Kommunikation.cs
 D:\Projekte\Auftraege\Kelvion API\LV-Kommunikation\obj\Debug\LV-Kommunikation.csproj.CoreCompileInputs.cache
 D:\Projekte\Auftraege\Kelvion API\LV-Kommunikation\obj\Debug\LV-Kommunikation.exe
 D:\Projekte\Auftraege\Kelvion API\LV-Kommunikation\obj\Debug\LV-Kommunikation.pdb
+C:\Users\Eggebrecht.LV\Source\Repos\lvbrecht\LV-Communication-Example\LV-Kommunikation\obj\Debug\LV-Kommunikation.csprojAssemblyReference.cache
+C:\Users\Eggebrecht.LV\Source\Repos\lvbrecht\LV-Communication-Example\LV-Kommunikation\obj\Debug\Interop.LVManage8.dll
+C:\Users\Eggebrecht.LV\Source\Repos\lvbrecht\LV-Communication-Example\LV-Kommunikation\obj\Debug\Interop.VBA.dll
+C:\Users\Eggebrecht.LV\Source\Repos\lvbrecht\LV-Communication-Example\LV-Kommunikation\obj\Debug\LV-Kommunikation.csproj.ResolveComReference.cache
+C:\Users\Eggebrecht.LV\Source\Repos\lvbrecht\LV-Communication-Example\LV-Kommunikation\obj\Debug\LV_Kommunikation.Form1.resources
+C:\Users\Eggebrecht.LV\Source\Repos\lvbrecht\LV-Communication-Example\LV-Kommunikation\obj\Debug\LV_Kommunikation.Properties.Resources.resources
+C:\Users\Eggebrecht.LV\Source\Repos\lvbrecht\LV-Communication-Example\LV-Kommunikation\obj\Debug\LV-Kommunikation.csproj.GenerateResource.cache
+C:\Users\Eggebrecht.LV\Source\Repos\lvbrecht\LV-Communication-Example\LV-Kommunikation\obj\Debug\LV-Kommunikation.csproj.CoreCompileInputs.cache
+C:\Users\Eggebrecht.LV\Source\Repos\lvbrecht\LV-Communication-Example\LV-Kommunikation\obj\Debug\LV-Kommunikation.exe
+C:\Users\Eggebrecht.LV\Source\Repos\lvbrecht\LV-Communication-Example\LV-Kommunikation\obj\Debug\LV-Kommunikation.pdb
+C:\Users\Eggebrecht.LV\Source\Repos\lvbrecht\LV-Communication-Example\LV-Kommunikation\bin\Debug\LV-Kommunikation.exe
+C:\Users\Eggebrecht.LV\Source\Repos\lvbrecht\LV-Communication-Example\LV-Kommunikation\bin\Debug\LV-Kommunikation.pdb

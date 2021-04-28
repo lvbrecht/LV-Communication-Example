@@ -40,6 +40,7 @@ namespace LV_Kommunikation {
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.Shutdown = new System.Windows.Forms.Button();
             this.hiddenB1 = new System.Windows.Forms.Button();
+            this.deleteChapterBt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // start
@@ -122,7 +123,7 @@ namespace LV_Kommunikation {
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(84, 20);
             this.textBox6.TabIndex = 12;
-            this.textBox6.Text = "Projekt";
+            this.textBox6.Text = "B1";
             // 
             // label5
             // 
@@ -192,11 +193,22 @@ namespace LV_Kommunikation {
             this.hiddenB1.UseVisualStyleBackColor = true;
             this.hiddenB1.Click += new System.EventHandler(this.hiddenB1_Click);
             // 
+            // deleteChapterBt
+            // 
+            this.deleteChapterBt.Location = new System.Drawing.Point(315, 93);
+            this.deleteChapterBt.Name = "deleteChapterBt";
+            this.deleteChapterBt.Size = new System.Drawing.Size(99, 27);
+            this.deleteChapterBt.TabIndex = 18;
+            this.deleteChapterBt.Text = "Delete Chapter";
+            this.deleteChapterBt.UseVisualStyleBackColor = true;
+            this.deleteChapterBt.Click += new System.EventHandler(this.deleteChapterBt_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(426, 400);
+            this.Controls.Add(this.deleteChapterBt);
             this.Controls.Add(this.hiddenB1);
             this.Controls.Add(this.Shutdown);
             this.Controls.Add(this.GetValue);
@@ -239,6 +251,7 @@ namespace LV_Kommunikation {
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button Shutdown;
         private System.Windows.Forms.Button hiddenB1;
+        private System.Windows.Forms.Button deleteChapterBt;
     }
 }
 
